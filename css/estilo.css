@@ -1,0 +1,150 @@
+/* body{
+    margin: 0;
+    padding: 0;
+    background: wheat;
+} */
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(../img/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /* para que la imagen se adapte al tamaño de la pantalla */
+    
+    position: relative;
+}
+
+/* esta parte es para que la imagen de fondo tenga cierta opacidad y el contenido (letras) se vea mejor */
+body:before{
+    content: "";
+    width: 100%;
+    height: 100vh;
+    background-color: thistle;
+    position: absolute;
+    opacity: .5;
+}
+
+
+p{
+    font-size: 30px;
+    font-family: 'Chilanka', cursive;
+    color:black;
+    z-index: 1;
+    
+}
+
+
+li{
+    list-style: none;
+    margin-right: 25px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    color: black;
+    z-index: 1;
+    
+}
+
+.menu{
+    display: flex; /* coloca a los elementos uno a lado de otro */
+    justify-content: space-between; /* crea un espacio entre los elementos */
+    align-items: center; /* alinea los elementos de manera vertical */
+    
+}
+
+.navegador{
+    display: flex;
+    
+}
+
+.navegador a{
+    text-decoration: none;
+    z-index: 1;
+}
+
+.titular{
+    text-align: center;
+    margin-top: 150px;
+    position: relative;
+    z-index: 1;
+}
+
+h1{
+    font-size: 60px;
+    margin:0;
+    font-family: 'Chilanka', cursive;
+    color:black;
+   
+}
+
+h2{
+    font-size: 25px;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 40px;
+    color: black;
+}
+
+.titular a{
+    font-size: 14px;
+    text-decoration: none;
+    color: mediumvioletred;
+    background: rgba(0, 204, 255,0.5);
+    padding: 20px 30px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder;
+}
+
+.contenedor{
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+}
+
+
+
+footer ul li{
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: white;
+    margin: 5px;
+    margin-top: 145px;
+    position: relative;
+    z-index: 1;
+}
+
+/* para el primer item de la lista de redes sociales */
+footer ul li:first-child{
+    background: url(../img/facebook.jpg);
+    background-size: cover; /* que cubra el tamaño de la caja */
+}
+
+/* para los siguientes elementos de la lista se usa nth-child(#de elemento) */
+footer ul li:nth-child(2){
+    background: url(../img/iconoWhats.png);
+    background-size: cover;
+}
+
+footer ul li:nth-child(3){
+    background: url(../img/iconoTwitter.jpg);
+    background-size: cover;
+}
+
+footer ul li:nth-child(4){
+    background: url(../img/iconoPinterest.jpg);
+    background-size: cover;
+}
+
+/* para el ultimo elemento de la lista se usa last-child */
+footer ul li:last-child{
+    background: url(../img/iconoGoogle.jpg);
+    background-size: cover;
+}
+
+/* si no se le da estructura a la etiqueta a del html no funcionarian los enlaces a las paginas */
+footer ul li a{
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}

@@ -1,0 +1,72 @@
+body{
+    background: url(../img/img2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /* para que la imagen se adapte al tamaño de la pantalla */
+}
+
+p{
+    font-size: 30px;
+    font-family: 'Chilanka', cursive;
+    color:white;
+    
+}
+
+
+li{
+    list-style: none;
+    margin-right: 25px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    color: white;
+    
+}
+
+.menu{
+    display: flex; /* coloca a los elementos uno a lado de otro */
+    justify-content: space-between; /* crea un espacio entre los elementos */
+    align-items: center; /* alinea los elementos de manera vertical */
+}
+
+.navegador{
+    display: flex;
+}
+
+.titular{
+    text-align: center;
+    margin-top: 150px;
+    
+}
+
+h1{
+    font-size: 60px;
+    margin:0;
+    font-family: 'Chilanka', cursive;
+    color:rgb(233, 19, 19);
+    
+    
+   
+}
+
+h2{
+    font-size: 25px;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 40px;
+    color: rgb(231, 29, 29);
+}
+
+a{
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    background: rgba(229, 255, 0, .5);
+    padding: 20px 30px; 
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder;
+}
+
+.contenedor{
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+   
+}

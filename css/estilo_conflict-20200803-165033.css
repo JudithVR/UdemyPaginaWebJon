@@ -1,0 +1,68 @@
+body{
+    background: url(../img/img1.jpg); 
+    background-repeat: no-repeat;
+    filter: alpha(opacity=50);
+    background-size: cover; /* para que la imagen se adapte al tamaño de la pantalla */
+}
+
+p{
+    font-size: 30px;
+    font-family: 'Chilanka', cursive;
+    color:black;
+    
+}
+
+
+li{
+    list-style: none;
+    margin-right: 25px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    color: black;
+    
+}
+
+.menu{
+    display: flex; /* coloca a los elementos uno a lado de otro */
+    justify-content: space-between; /* crea un espacio entre los elementos */
+    align-items: center; /* alinea los elementos de manera vertical */
+}
+
+.navegador{
+    display: flex;
+}
+
+.titular{
+    text-align: center;
+    margin-top: 150px;
+}
+
+h1{
+    font-size: 60px;
+    margin:0;
+    font-family: 'Chilanka', cursive;
+    color:white;
+}
+
+h2{
+    font-size: 25px;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 40px;
+    color: white;
+}
+
+a{
+    font-size: 14px;
+    text-decoration: none;
+    color: mediumvioletred;
+    background: #5cb8ff;
+    padding: 20px 30px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder;
+}
+
+.contenedor{
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+}
