@@ -9,9 +9,10 @@ body{
     padding: 0;
     background: url(../img/img1.jpg);
     background-repeat: no-repeat;
-    background-size: cover; /* para que la imagen se adapte al tamaño de la pantalla */
-    
+    background-size: cover; /* para que la imagen se adapte al tamaño de la pantalla */ 
     position: relative;
+    width: 100%;
+   
 }
 
 /* esta parte es para que la imagen de fondo tenga cierta opacidad y el contenido (letras) se vea mejor */
@@ -48,7 +49,10 @@ li{
     display: flex; /* coloca a los elementos uno a lado de otro */
     justify-content: space-between; /* crea un espacio entre los elementos */
     align-items: center; /* alinea los elementos de manera vertical */
-    
+}
+
+.menu p a{
+    text-decoration: none;
 }
 
 .navegador{
@@ -66,6 +70,7 @@ li{
     margin-top: 150px;
     position: relative;
     z-index: 1;
+    text-align: center;
 }
 
 h1{
@@ -83,7 +88,7 @@ h2{
     color: black;
 }
 
-.titular a{
+.titular a, .contenedorParrafoBoton a{
     font-size: 14px;
     text-decoration: none;
     color: mediumvioletred;
@@ -99,7 +104,41 @@ h2{
     margin: auto;
 }
 
+/* seccion sobre mi */
+ .sobreMi {
+    margin-top: 35px;
+    margin-bottom: -98px;
+    position: relative;
+    z-index: 1;
+    text-align: center; 
+}
 
+.sobreMi h3{
+    text-align: center;
+    font-family: 'Chilanka', cursive;
+    font-size: 30px;
+}
+
+.contenedorSobreMi {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.contenedorParrafoBoton{
+    text-align: justify;
+    font-family: 'Chilanka', cursive;
+    font-size: 20px;
+    width: 50%;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+
+/* termina seccion sobre mi */
+
+
+/* inicia footer */
 
 footer ul li{
     float: right;
@@ -108,7 +147,7 @@ footer ul li{
     border-radius: 100%;
     background: white;
     margin: 5px;
-    margin-top: 145px;
+    margin-top: 146px;
     position: relative;
     z-index: 1;
 }
@@ -148,3 +187,5 @@ footer ul li a{
     height: 40px;
     border-radius: 100%;
 }
+
+/* fin footer */
