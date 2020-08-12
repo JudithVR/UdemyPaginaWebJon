@@ -10,8 +10,11 @@ body{
     background: url(../img/img1.jpg);
     background-repeat: no-repeat;
     background-size: cover; /* para que la imagen se adapte al tamaño de la pantalla */ 
-    position: relative;
+    position: relative; 
+    background-attachment: fixed;
     width: 100%;
+    
+    
    
 }
 
@@ -21,7 +24,7 @@ body:before{
     width: 100%;
     height: 100vh;
     background-color: thistle;
-    position: absolute;
+    position: fixed;
     opacity: .5;
 }
 
@@ -113,7 +116,7 @@ h2{
     text-align: center; 
 }
 
-.sobreMi h3{
+.sobreMi h3 {
     text-align: center;
     font-family: 'Chilanka', cursive;
     font-size: 30px;
@@ -132,13 +135,86 @@ h2{
     font-size: 20px;
     width: 50%;
     font-weight: bold;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
+}
+
+.contenedorParrafoBoton a{
+    display: inline-block; /* se debe colocar esta propiedad para poder darle margen, ya que por defecto a es un elemento en linea, es decir que se coloca a lado del elemento que la antecede, se debe colocar en bloque para poder darle margen */
+    margin-left: 150px;
+    
+
 }
 
 /* termina seccion sobre mi */
 
+/* seccion servicios */
+
+
+.contenedorServicios{
+    display: flex; /* para colocar los elementos uno a lado del otro */
+    flex-wrap: wrap; /* para controlar el numero de elementos que habra en una linea */
+    justify-content: space-around;
+    
+}
+
+.servicio{
+    width: 28%;
+    padding: 30px 28px 30px 8px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    z-index: 3;
+}
+
+.violeta{
+    background: rgba(255,144,235, 0.5);
+    
+}
+
+.celeste{
+    background: rgba(148, 242, 228, 0.5);
+    
+}
+
+.servicios{
+    position: relative;
+    z-index: 3;
+}
+
+.servicios h3 {
+    text-align: center;
+    font-family: 'Chilanka', cursive;
+    font-size: 30px;
+}
+
+.contenedorServicios h4 {
+    text-align: center;
+    margin: 0;
+    font-family: 'Chilanka', cursive;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.contenedorServicios p{
+    text-align: center;
+    font-family: 'Cormorant Upright', serif;
+    font-weight: normal;
+    font-size: 25px;
+    height:350px;
+}
+
+.contenedorServicios img{
+    float: right;
+}
+
+
+
+
+
+/* termina seccion servicios */
+
 
 /* inicia footer */
+
 
 footer ul li{
     float: right;
