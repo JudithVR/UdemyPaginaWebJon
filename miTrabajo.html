@@ -8,6 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@600&display=swap" rel="stylesheet">
+
+    <!-- para carrusel de imagenes -->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 </head>
 <body>
     <header class="img">
@@ -29,11 +33,15 @@
             <section class="miTrabajo">
                 
                 <h3>Mis trabajos</h3>
-                <div class="contenedorTrabajos"> 
+                <div class="contenedorTrabajos">
+                    <div class="owl-carousel">
+                        <div><img src="img/foto1.jpg" alt=""></div>
+                        <div><img src="img/foto2.jpg" alt=""></div>
+                        <div><img src="img/foto3.jpg" alt=""></div>
+                        <div><img src="img/foto4.jpg" alt=""></div>
+                        <div><img src="img/foto5.jpg" alt=""></div>
                         
-    
-                        
-
+                      </div> 
                 </div>
                 
                 
@@ -54,7 +62,28 @@
         </ul>
     </footer>
     
-    
+    <!-- archivos para obtener un carousel que se desliza al desplazar con el mouse sobre los elemnentos -->
+    <script src="owlcarousel/jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            /* con responsive se controla el numero de elemntos que se veran en pantalla en el carousel dependiento el tamaño del dispositivo*/
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:4
+                }
+            }
+        })
+    </script>
     
 </body>
 </html>
