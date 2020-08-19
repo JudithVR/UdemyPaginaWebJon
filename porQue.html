@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina WEB curso Jonathan</title>
+    <link rel="stylesheet" href="css/estilo.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@600&display=swap" rel="stylesheet">
+
+    <!-- para carrusel de imagenes -->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+</head>
+<body>
+    <header class="img">
+        <div class="contenedor">
+            <div class="menu"> 
+                 <p><a href="index.html"> YuyúCreate</a></p>
+                <nav>
+                    <ul class="navegador">
+                        <a href="sobreMi.html"><li>Sobre mi</li></a>
+                        <a href="servicios.html"><li>Servicios</li></a>
+                        <a href="miTrabajo.html"><li>Mi trabajo</li></a>
+                        <a href="porQue.html"><li>¿Por qué trabajar conmigo?</li></a>
+                        <a href="blog.html"><li>Blog</li></a>
+                        <a href="contacto.html"><li>Contacto</li></a>
+                    </ul>
+                </nav>
+            </div>
+        
+            <section class="porQue">
+                
+                <h3>Por qué trabajar conmigo</h3>
+                <div class="contenedorPorQue">
+                    <div class="porQueSingular">
+                        <img src="img/velocidad.png">
+                        <h4>Velocidad</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vero, accusantium ducimus itaque necessitatibus cumque ratione vel, dolores perspiciatis maiores modi expedita placeat quae dolorem quaerat aperiam mollitia, repellat eligendi!</p>
+                    </div>
+
+                    <div class="porQueSingular">
+                        <img src="img/mantenimiento.png">
+                        <h4>Mantenimiento</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa id harum, minima quaerat perferendis quos nostrum illum debitis, similique quia doloribus delectus odio? Quasi provident tempora nisi perferendis excepturi? Voluptatem!</p>
+                    </div>
+                    
+                    <div class="porQueSingular">
+                        <img src="img/mobile-icon.png">
+                        <h4>Movil Priority</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa id harum, minima quaerat perferendis quos nostrum illum debitis, similique quia doloribus delectus odio? Quasi provident tempora nisi perferendis excepturi? Voluptatem!</p>
+                    </div>
+
+                    
+                </div>
+                
+                
+            </section>
+        </div>   
+    </header>
+
+    <footer>
+        <ul> <!-- listado numerico -->
+            <!-- el llamado a las imagenes de los iconos de redes se hace en css -->
+            <!-- target="blank es para que la pagina se abra en una pestaña nueva" -->
+            <li><a href="http://www.facebook.com" target="_blank"></a></li>
+            <li><a href="http://www.whatsapp.com" target="_blank"></a></li>
+            <li><a href="http://www.twitter.com" target="_blank"></a></li>
+            <li><a href="http://www.pinterest.com" target="_blank"></a></li>
+            <li><a href="http://www.google.com" target="_blank"></a></li>
+            
+        </ul>
+    </footer>
+    
+    <!-- archivos para obtener un carousel que se desliza al desplazar con el mouse sobre los elemnentos -->
+    <script src="owlcarousel/jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            /* con responsive se controla el numero de elemntos que se veran en pantalla en el carousel dependiento el tamaño del dispositivo*/
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:4
+                }
+            }
+        })
+    </script>
+    
+</body>
+</html>
