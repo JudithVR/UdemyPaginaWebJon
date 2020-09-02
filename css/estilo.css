@@ -449,7 +449,7 @@ footer ul li a{
 }
 
 /* responsive */
-@media (max-width:480px){
+@media (max-width:800px){
     /* se aplicara cuando el maximo de ancho sea de 480px */
     body{
         background:  url(../img/img5_1.jpg);
@@ -524,7 +524,94 @@ footer ul li a{
         margin: auto;
         margin-bottom: 15px;
     }
+
+    .contenedorPorQue{
+        flex-direction: column;
+    }
+
+    .porQueSingular{
+        width: 93%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
     
+    .contenedorBlog{
+        flex-direction: column;
+    }
+    .blogSingular{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width:700px) and (max-width:900px){
+    header{
+        height: 93vh;
+    }
+
+    .menu p {
+        font-size: 43px;
+    }
+
+    .menu-icon {
+        width: 38px;
+    }
+
+    .titular h1 {
+        font-size: 76px;
+        margin-top: 246px;
+    }
+
+    h2 {
+        font-size: 34px;
+    }
+
+    .navegador li {
+        font-size: 40px;
+    }
+
+    nav {
+        top: 86px;
+        width: 60%;
+    }
+
+    .titular a, .contenedorParrafoBoton a {
+        font-size: 21px;
+    }
+
+    .contenedorParrafoBoton a {
+        margin-left: 188px;
+    }
+
+    .contenedorSobreMi img {
+        width: 60%;
+        padding-bottom: 74px;
+    }
+
+    .footerServicios{
+        margin-top: 1560px;
+    }
+
+    .servicio {
+        height: 300px;
+    }
+
+    .contenedorServicios img{
+        margin-top: -176px;
+    }
+
+    .footerPorQue{
+        margin-top: 90px;
+    }
+
+    .footerBlog{
+        margin-top: 478px;;
+    }
+
+    .blogSingular {
+        width: 74%;
+    }
 }
 
 /* fin de responive */

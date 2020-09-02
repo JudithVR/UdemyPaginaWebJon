@@ -20,6 +20,7 @@
         <div class="contenedor">
             <div class="menu"> 
                  <p><a href="index.html"> YuyúCreate</a></p>
+                 <img class="menu-icon" src="img/menu.png">
                 <nav>
                     <ul class="navegador">
                         <a href="sobreMi.html"><li>Sobre mi</li></a>
@@ -60,7 +61,7 @@
         </div>   
     </header>
 
-    <footer>
+    <footer class="footerBlog">
         <ul> <!-- listado numerico -->
             <!-- el llamado a las imagenes de los iconos de redes se hace en css -->
             <!-- target="blank es para que la pagina se abra en una pestaña nueva" -->
@@ -72,29 +73,16 @@
             
         </ul>
     </footer>
-    
-    <!-- archivos para obtener un carousel que se desliza al desplazar con el mouse sobre los elemnentos -->
+       
     <script src="owlcarousel/jquery.min.js"></script>
-    <script src="owlcarousel/owl.carousel.min.js"></script>
     <script>
-        $('.owl-carousel').owlCarousel({
-            loop:true,
-            margin:10,
-            nav:true,
-            /* con responsive se controla el numero de elemntos que se veran en pantalla en el carousel dependiento el tamaño del dispositivo*/
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:3
-                },
-                1000:{
-                    items:4
-                }
-            }
+        $('.menu-icon').click(function(){
+            $('header nav').slideToggle();
+            
         })
     </script>
+    
+    
     
 </body>
 </html>
