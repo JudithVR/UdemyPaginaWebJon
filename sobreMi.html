@@ -13,6 +13,7 @@
         <div class="contenedor">
             <div class="menu"> 
                  <p><a href="index.html"> YuyúCreate</a></p>
+                 <img class="menu-icon" src="img/menu.png">
                 <nav>
                     <ul class="navegador">
                         <a href="sobreMi.html"><li>Sobre mi</li></a>
@@ -53,6 +54,13 @@
         </ul>
     </footer>
     
+    <script src="owlcarousel/jquery.min.js"></script>
+    <script>
+        $('.menu-icon').click(function(){
+            $('header nav').slideToggle();
+            
+        })
+    </script>
     
     
 </body>

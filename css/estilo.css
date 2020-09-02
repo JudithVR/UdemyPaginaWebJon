@@ -442,11 +442,13 @@ footer ul li a{
 
 /* fin footer */
 
-/* responsive */
+
 
 .menu-icon{
     display:none;
 }
+
+/* responsive */
 @media (max-width:480px){
     /* se aplicara cuando el maximo de ancho sea de 480px */
     body{
@@ -467,7 +469,7 @@ footer ul li a{
         text-align:right;
         background: linear-gradient(rgb(0, 217, 255),rgb(89, 0, 255));
         opacity: .9;
-        width: 96.2%;
+        width: 86%;
         display: none;
         z-index: 4;
         border-radius: 13px;
@@ -480,9 +482,48 @@ footer ul li a{
     .menu-icon{
         display: block;
         width: 25px;
+        background:#39bef7;
+        padding: 3px;
+        border-radius: 6px;
+    }
+
+    .titular{
+        margin-top: 108px;
+        margin-bottom: 115px;
+    }
+
+    .titular h1{
+        font-size: 54px;
+    }
+
+    .contenedorSobreMi{
+        flex-direction: column;
+    }
+
+    .contenedorSobreMi img{
+        width: 80%;
+        padding-bottom: 20px;
+    }
+
+    .contenedorParrafoBoton{
+        width: 90%;
+        margin-bottom: 10px;
         
     }
 
+    .contenedorParrafoBoton a{
+        margin-left: 61px;
+    }
+
+    .contenedorServicios{
+        flex-direction: column;
+    }
+
+    .servicio {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
     
 }
 
